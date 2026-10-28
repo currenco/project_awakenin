@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Project Awakening screen-by-screen client review prototype, based on PRD V2.0."
+    />
+    <title>Awakening · Design review</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="top">
+      <a class="brand" href="#home"
+        ><span class="sigil">A</span> AWAKENING
+        <span class="muted">/ Design review</span></a
+      >
+      <div class="top-actions">
+        <span class="version">PRD V2.0 · CONCEPT 01</span
+        ><button id="view-toggle">View flow</button
+        ><button id="reset">Reset demo</button>
+      </div>
+    </header>
+    <main class="workspace">
+      <aside class="sidebar">
+        <div class="eyebrow">THE PLAYER JOURNEY</div>
+        <h1>A stronger you.<br />A world to unlock.</h1>
+        <p class="muted">
+          An Android-first fitness RPG.<br />Select a screen or walk through the
+          app.
+        </p>
+        <div id="screen-count" class="count"></div>
+        <nav id="screen-nav" aria-label="Screen index"></nav>
+      </aside>
+      <section class="stage" aria-label="Interactive mobile prototype">
+        <div class="stage-caption">
+          <span class="live-dot"></span> INTERACTIVE PROTOTYPE
+          <span>390 × 844</span>
+        </div>
+        <div class="phone">
+          <div class="status">
+            <span>9:41</span
+            ><span aria-label="Full signal and battery">▴ ▴ ▰</span>
+          </div>
+          <div id="app"></div>
+          <div class="home-indicator"></div>
+        </div>
+        <div class="stage-bottom">
+          <button id="previous">← Previous screen</button
+          ><button id="next">Next screen →</button>
+        </div>
+        <p class="demo-label">
+          Demo only · No camera, purchases, or personal data uploads.
+        </p>
+      </section>
+      <aside class="inspector" id="inspector"></aside>
+      <section id="flow" hidden></section>
+    </main>
+    <div id="toast" role="status"></div>
+    <script src="questions.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
