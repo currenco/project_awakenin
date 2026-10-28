@@ -32,12 +32,16 @@
         </p>
         <div id="screen-count" class="count"></div>
         <nav id="screen-nav" aria-label="Screen index"></nav>
+        <p class="demo-label">
+          Demo only · No camera, purchases, or personal data uploads.
+        </p>
       </aside>
       <section class="stage" aria-label="Interactive mobile prototype">
         <div class="stage-caption">
           <span class="live-dot"></span> INTERACTIVE PROTOTYPE
-          <span>390 × 844</span>
+          <span>Fits your viewport</span>
         </div>
+        <div class="phone-area">
         <div class="phone">
           <div class="status">
             <span>9:41</span
@@ -46,13 +50,12 @@
           <div id="app"></div>
           <div class="home-indicator"></div>
         </div>
-        <div class="stage-bottom">
-          <button id="previous">← Previous screen</button
-          ><button id="next">Next screen →</button>
         </div>
-        <p class="demo-label">
-          Demo only · No camera, purchases, or personal data uploads.
-        </p>
+        <div class="stage-bottom">
+          <button id="previous" aria-label="Previous screen" title="Previous screen">←</button
+          ><button id="next" aria-label="Next screen" title="Next screen">→</button>
+        </div>
+
       </section>
       <aside class="inspector" id="inspector"></aside>
       <section id="flow" hidden></section>
@@ -60,5 +63,6 @@
     <div id="toast" role="status"></div>
     <script src="questions.js"></script>
     <script src="app.js"></script>
+    <script src="fit-preview.js"></script>
   </body>
 </html>
